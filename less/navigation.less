@@ -3,10 +3,18 @@
         display: flex;
         justify-content: space-evenly;
         background-color: @blue;
+        @media @mobile{
+            flex-direction: column;
+            align-items: center;
+        }
         img {
             align-self: flex-start;
             width:15%;
             margin: 0% 0% 0% 15%;
+            @media @mobile{
+                width:50%;
+                margin: auto;
+            }
         }
     }
 }
@@ -16,11 +24,20 @@ nav{
     padding: 0% 5% 5% 5%;
     display: flex;
     justify-content: center;
-    
+    @media @mobile{
+        flex-direction: column;
+        align-items: center;
+        margin:auto;
+        padding: 0%;
+    }
     a{
         margin: 5%;
         text-decoration: none;
         color: @font;
         font-size: 2.75rem;
+        @media @mobile{
+            margin:10% 0%;
+            font-size: 3.5rem;
+        }
     }
 }
