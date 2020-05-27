@@ -141,7 +141,8 @@ body {
   display: flex;
   justify-content: space-evenly;
   background-color: #007bff;
-  border-radius: 0px 0px 15px 10px;
+  border-radius: 0px 0px 15px 15px;
+  align-items: center;
 }
 @media (max-width:500px) {
   .nav_container .nav {
@@ -150,6 +151,7 @@ body {
     justify-content: center;
     padding-bottom: 10%;
     margin: auto;
+    width: 100%;
   }
   .nav_container .nav img {
     align-self: flex-start;
@@ -170,7 +172,7 @@ body {
   margin: 3% 25% 0% 0%;
   padding: 0% 5% 5% 5%;
   display: flex;
-  justify-content: center;
+  justify-content: right;
 }
 @media (max-width:500px) {
   .nav_container nav {
@@ -196,8 +198,8 @@ body {
   }
 }
 body {
-  width: 93%;
-  padding-left: 10%;
+  width: 90%;
+  padding-left: 8%;
 }
 @media (max-width:500px) {
   body {
@@ -264,7 +266,7 @@ body .big-boi {
   text-align: center;
 }
 .middle-content {
-  margin-top: 20%;
+  margin-top: 8%;
   height: 35%;
 }
 .middle-content .middle-content-div {
@@ -275,7 +277,6 @@ body .big-boi {
 @media (max-width:500px) {
   .middle-content .middle-content-div {
     height: 50vh;
-    margin-top: 15%;
   }
 }
 .middle-content .middle-content-div .heading-text {
@@ -293,20 +294,24 @@ body .big-boi {
   }
 }
 .bottom-content {
-  border-radius: 15px 15px 0 0;
+  border-radius: 15px 15px 0px 0px;
   background-color: #007bff;
   display: flex;
   justify-content: center;
+  margin-top: 10%;
 }
 @media (max-width:500px) {
-  .bottom-content {
-    border-radius: 0;
-  }
 }
 .bottom-content nav {
   display: flex;
   justify-content: space-between;
   width: 80%;
+}
+@media (max-width:500px) {
+  .bottom-content nav {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .bottom-content nav a {
   text-decoration: none;
@@ -315,6 +320,18 @@ body .big-boi {
   color: #ffffff;
   font-size: 3rem;
 }
+@media (max-width:500px) {
+  .bottom-content nav a {
+    width: 50%;
+    text-align: center;
+  }
+}
 .bottom-content nav img {
   width: 20%;
+}
+@media (max-width:500px) {
+  .bottom-content nav img {
+    width: 50%;
+    margin-top: 5%;
+  }
 }

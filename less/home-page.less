@@ -1,6 +1,6 @@
 body{
-    width:93%;
-    padding-left:10%;
+    width:90%;
+    padding-left:8%;
     @media @mobile {
         width: 100%;
         margin: auto;
@@ -59,7 +59,7 @@ body{
     }
 }
 .middle-content{
-    margin-top:20%;
+    margin-top:8%;
     height:35%;
     .middle-content-div{
         display:flex;
@@ -67,7 +67,6 @@ body{
         align-items: center;
         @media @mobile{
             height:50vh;
-            margin-top: 15%;
         }
         .heading-text{
             font-size:3rem;
@@ -84,26 +83,39 @@ body{
     } 
 }
 .bottom-content{
-    border-radius: 15px 15px 0 0;
+    border-radius: 15px 15px 0px 0px;
     background-color: @blue;
     display:flex;
     justify-content: center;
+    margin-top: 10%;
     @media @mobile{
-        border-radius: 0;
+        // border-radius: 0;
     }
     nav{
         display:flex;
         justify-content: space-between;
         width:80%;
+        @media@mobile{
+            flex-direction: column;
+            align-items: center;
+        }
         a{
             text-decoration: none;
             margin:1%;
             margin-top:10%;
             color:@font;
             font-size: 3rem;
+            @media@mobile{
+                width: 50%;
+                text-align:center;
+            }
         }
         img{
             width:20%;
+            @media@mobile{
+                width:50%;
+                margin-top: 5%;
+            }
         }
     }
 }
