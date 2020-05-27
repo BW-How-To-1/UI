@@ -1,7 +1,19 @@
-body {
-    width:100vw;
+body{
+    width:93%;
+    padding-left:10%;
     @media @mobile {
         width: 100%;
+        margin: auto;
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-left: 0;
+    }
+    .big-boi{
+        width:98.5%;
+        @media @mobile{
+            width:100%;
+        }
     }
 }
 
@@ -9,20 +21,20 @@ body {
     width:80%;
     margin:auto;
     display: flex;
-    // justify-content:center;
     flex-direction: row;
     flex-wrap: wrap;
     @media @mobile{
-        width:80%;
+        width: 100%;
     }
     .top-content{
         display:flex;
         justify-content: space-around;
-        height:30vh;
+        height:30%;
         @media @mobile{
             flex-direction: column;
             align-items: center;
-            margin-top: 25%;
+            justify-content: center;
+            margin-top: 25% auto;
         }
     }
 }
@@ -39,14 +51,16 @@ body {
     .heading-text{
         font-size: 3rem;
         margin-bottom: 6%;
+        text-align: center;
     }
     .text-container{
         font-size: 1.5rem;
+        text-align: center;
     }
 }
 .middle-content{
-    margin-top:7%;
-    height:35vh;
+    margin-top:20%;
+    height:35%;
     .middle-content-div{
         display:flex;
         flex-direction: column;
@@ -62,6 +76,7 @@ body {
         .text-container{
             width:60%;
             font-size:1.5rem;
+            text-align: center;
             @media @mobile{
                 width:80%;
             }
@@ -69,19 +84,26 @@ body {
     } 
 }
 .bottom-content{
-    width:100%;
-    height:37vh;
+    border-radius: 15px 15px 0 0;
     background-color: @blue;
-    @media @mobile {
-        width: 80%;
-        margin: 0 auto;
+    display:flex;
+    justify-content: center;
+    @media @mobile{
+        border-radius: 0;
     }
-    a{
-        margin-top:10%;
-    }
-    img{
-        width:17%;
-        margin-left: 10%;
-        margin-top: 1%;
+    nav{
+        display:flex;
+        justify-content: space-between;
+        width:80%;
+        a{
+            text-decoration: none;
+            margin:1%;
+            margin-top:10%;
+            color:@font;
+            font-size: 3rem;
+        }
+        img{
+            width:20%;
+        }
     }
 }

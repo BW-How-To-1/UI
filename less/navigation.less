@@ -4,23 +4,26 @@
     @media @mobile {
         width: 100%;
         padding-bottom: 10%;
+        margin-bottom:10%;
     }
     .nav{
         display: flex;
         justify-content: space-evenly;
         background-color: @blue;
+        border-radius:0px 0px 15px 10px;
+        
         @media @mobile{
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            padding-bottom: 20%;
-        }
+            padding-bottom: 10%;
+            margin: auto;
         img {
             align-self: flex-start;
-            width:15%;
+            width:5%;
             margin: 0% 0% 0% 15%;
             @media @mobile{
-                width:50%;
+                width:80%;
                 margin: 5%;
                 justify-content: center;
                 align-self: center;
@@ -52,5 +55,6 @@ nav{
             font-size: 3.5rem;
             align-self: center;
         }
+    }
     }
 }
