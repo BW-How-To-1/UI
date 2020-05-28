@@ -300,9 +300,7 @@ body .big-boi {
   background-color: #007bff;
   display: flex;
   justify-content: center;
-  margin-top: 1%;
-}
-@media (max-width:500px) {
+  margin-top: 8%;
 }
 .bottom-content nav {
   display: flex;
@@ -346,6 +344,8 @@ body .big-boi {
   background-color: #007bff;
   margin-top: 10%;
   border-radius: 15px;
+  margin-bottom: 10%;
+  color: #ffffff;
 }
 .about-main-container .about-card {
   width: 30%;
@@ -354,7 +354,6 @@ body .big-boi {
   align-items: center;
   margin: 5%;
   padding: 1%;
-  background-color: #ffffff;
   border-radius: 15px;
 }
 @media (max-width:500px) {
