@@ -363,6 +363,7 @@ body .big-boi {
 .about-main-container img {
   width: 80%;
   margin: 2%;
+  border-radius: 1000px;
 }
 .about-main-container .card-heading {
   font-size: 1.75rem;
