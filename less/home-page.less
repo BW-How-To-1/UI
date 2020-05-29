@@ -4,7 +4,7 @@ body{
     @media @mobile {
         width: 100%;
         margin: auto;
-        display:flex;
+        .flex();
         justify-content: center;
         flex-direction: column;
         padding-left: 0;
@@ -20,14 +20,15 @@ body{
 .main-container{
     width:80%;
     margin:auto;
-    display: flex;
+    .flex();
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
     @media @mobile{
         width: 100%;
     }
     .top-content{
-        display:flex;
+        .flex();
         justify-content: space-around;
         height:30%;
         @media @mobile{
@@ -39,7 +40,7 @@ body{
     }
 }
 .top-content-div{
-    display:flex;
+    .flex();
     align-items: center;
     flex-direction: column;
     margin-top: 5%;
@@ -62,9 +63,10 @@ body{
     margin-top:8%;
     height:35%;
     .middle-content-div{
-        display:flex;
+        .flex();
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         @media @mobile{
             height:50vh;
         }
@@ -85,17 +87,14 @@ body{
 .bottom-content{
     border-radius: 15px 15px 0px 0px;
     background-color: @blue;
-    display:flex;
+    .flex();
     justify-content: center;
-    margin-top: 10%;
-    @media @mobile{
-        // border-radius: 0;
-    }
+    margin-top: 8%;
     nav{
-        display:flex;
+        .flex();
         justify-content: space-between;
         width:80%;
-        @media@mobile{
+        @media @mobile{
             flex-direction: column;
             align-items: center;
         }

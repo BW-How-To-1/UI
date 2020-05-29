@@ -1,3 +1,6 @@
+.flex {
+  display: flex;
+}
 html,
 body,
 div,
@@ -225,6 +228,7 @@ body .big-boi {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
 }
 @media (max-width:500px) {
   .main-container {
@@ -273,6 +277,7 @@ body .big-boi {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 @media (max-width:500px) {
   .middle-content .middle-content-div {
@@ -298,9 +303,7 @@ body .big-boi {
   background-color: #007bff;
   display: flex;
   justify-content: center;
-  margin-top: 10%;
-}
-@media (max-width:500px) {
+  margin-top: 8%;
 }
 .bottom-content nav {
   display: flex;
@@ -344,6 +347,8 @@ body .big-boi {
   background-color: #007bff;
   margin-top: 10%;
   border-radius: 15px;
+  margin-bottom: 10%;
+  color: #ffffff;
 }
 .about-main-container .about-card {
   width: 30%;
@@ -352,7 +357,6 @@ body .big-boi {
   align-items: center;
   margin: 5%;
   padding: 1%;
-  background-color: #ffffff;
   border-radius: 15px;
 }
 @media (max-width:500px) {
@@ -363,6 +367,7 @@ body .big-boi {
 .about-main-container img {
   width: 80%;
   margin: 2%;
+  border-radius: 1000px;
 }
 .about-main-container .card-heading {
   font-size: 1.75rem;

@@ -1,5 +1,5 @@
 .about-main-container{
-    display:flex;
+    .flex();
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
@@ -7,6 +7,8 @@
     background-color:@blue;
     margin-top: 10%;
     border-radius: 15px;
+    margin-bottom: 10%;
+    color:@font;
     .about-card{
         width:30%;
         display: flex;
@@ -14,7 +16,7 @@
         align-items: center;
         margin: 5%;
         padding: 1%;
-        background-color: @font;
+        // background-color: @grey;
         border-radius: 15px;
         @media @mobile{
             width:100%;
@@ -23,6 +25,7 @@
     img{
         width: 80%;
         margin:2%;
+        border-radius:1000px;
     }
     .card-heading{
         font-size:1.75rem;
